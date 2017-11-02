@@ -37,7 +37,7 @@ This allows the message translator to translate the keys added. So model objects
 
 * `http.Request` is no longer contained in `revel.Request` revel.Request remains functionally the same but 
 you cannot extract the `http.Request` from it. You can get the `http.Request` from `revel.Controller.Request.In.GetRaw().(*http.Request)`
-* `http.Response.Out` Is not the http.Response and is deprecated, you can get the output writer by doing `http.Response.GetWriter()`. You can get the `http.Response` from revel.Controller.Response.Out.Server.GetRaw().(*http.Response)`
+* `http.Response.Out` Is not the http.Response and is deprecated, you can get the output writer by doing `http.Response.GetWriter()`. You can get the `http.Response` from `revel.Controller.Response.Out.Server.GetRaw().(*http.Response)`
 
 * `Websocket` changes. `revel.ServerWebsocket` is the new type of object you need to declare for controllers 
 which should need to attach to websockets. Implementation of these objects have been simplified
